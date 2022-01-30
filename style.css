@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  color: white;
+  background-image: url(img/Survey\ bg.jpg);
+  position: fixed;
+  font-family: Rubik;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 24px;
+  overflow-y: scroll;
+}
+
+.main::after {
+  content: "";
+  background-color: rgba(74, 0, 170, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+#title,
+#description {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.main-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  z-index: 2;
+  position: relative;
+  border-radius: 5px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  margin-bottom: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="number"],
+label[for="dropdown"],
+label[for="comment"] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#videos,
+#wiki,
+#forum,
+input {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+#comment {
+  min-height: 180px;
+}
+
+label[for="comment"] {
+  margin-top: 30px;
+}
+
+#submit {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 90, 53);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
